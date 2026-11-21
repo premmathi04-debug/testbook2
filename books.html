@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prepare It & Crack It | Books Library</title>
+    <meta
+      name="description"
+      content="Browse curated government exam preparation books, search by topic, and filter by category."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="books">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Prepare It & Crack It home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="crown">👑</span>
+            <span class="book">📖</span>
+          </span>
+          <span class="brand-text">Prepare It &amp; Crack It</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="books.html" class="nav-link active">Books</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="books.html" class="nav-cta">Explore Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell page-inner">
+      <section class="inner-hero section">
+        <div class="container inner-header reveal-up">
+          <span class="eyebrow">Book collection</span>
+          <h1>Study smarter with high-impact exam books</h1>
+          <p>
+            Explore open-source and recommended books for the most common government exams and foundational subjects.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container controls-wrap reveal-up">
+          <div class="search-box">
+            <input type="search" id="bookSearch" placeholder="Search books, authors, or exams..." aria-label="Search books" />
+          </div>
+
+          <div class="filter-row" aria-label="Filter books by category">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="upsc">UPSC</button>
+            <button class="filter-btn" data-filter="ssc">SSC</button>
+            <button class="filter-btn" data-filter="banking">Banking</button>
+            <button class="filter-btn" data-filter="teaching">Teaching</button>
+            <button class="filter-btn" data-filter="defence">Defence</button>
+            <button class="filter-btn" data-filter="railways">Railways</button>
+            <button class="filter-btn" data-filter="state">State Govt</button>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="book-grid library-grid" id="bookGrid">
+            <article class="book-card reveal-up" data-category="upsc" data-search="modern indian history upsc rakesh sharma polity">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=80" alt="Modern Indian History book" />
+              <div class="book-info">
+                <span class="book-tag">UPSC</span>
+                <h3>Modern Indian History</h3>
+                <p class="meta">By Rakesh Sharma</p>
+                <p>Timeline-based notes with revision-focused summaries and quick facts.</p>
+                <small>Related exam: UPSC Civil Services</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="banking" data-search="quantitative aptitude banking meera nair ibps sbi">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="Quantitative aptitude book" />
+              <div class="book-info">
+                <span class="book-tag">Banking</span>
+                <h3>Quantitative Aptitude</h3>
+                <p class="meta">By Meera Nair</p>
+                <p>Practice chapters for arithmetic, simplification, and data interpretation.</p>
+                <small>Related exam: SBI / IBPS / RBI</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="ssc" data-search="english grammar ssc arjun verma chsl cgl">
+              <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=900&q=80" alt="English Grammar Mastery book" />
+              <div class="book-info">
+                <span class="book-tag">SSC</span>
+                <h3>English Grammar Mastery</h3>
+                <p class="meta">By Arjun Verma</p>
+                <p>Grammar rules, error spotting, and sentence improvement practice.</p>
+                <small>Related exam: SSC CGL / CHSL</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="teaching" data-search="teaching ctet kvs nvs pedagogy priya khan">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" alt="Teaching exam book" />
+              <div class="book-info">
+                <span class="book-tag">Teaching</span>
+                <h3>Teaching Aptitude Essentials</h3>
+                <p class="meta">By Priya Khan</p>
+                <p>Pedagogy, development, and child psychology topics for TET exams.</p>
+                <small>Related exam: CTET / KVS / NVS</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="defence" data-search="defence nda cds capf samaira singh patriotism">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Defence exam preparation book" />
+              <div class="book-info">
+                <span class="book-tag">Defence</span>
+                <h3>Defence General Awareness</h3>
+                <p class="meta">By Samaira Singh</p>
+                <p>Current affairs, geography, and aptitude-focused material for defence exams.</p>
+                <small>Related exam: NDA / CDS / AFCAT</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="railways" data-search="railways rrb ntpc group d reasoning mahendra joshi">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80" alt="Railway exam preparation book" />
+              <div class="book-info">
+                <span class="book-tag">Railways</span>
+                <h3>Railway Reasoning Booster</h3>
+                <p class="meta">By Mahendra Joshi</p>
+                <p>Speed-based reasoning modules and exam strategy for railway recruitment.</p>
+                <small>Related exam: RRB / Group D / ALP</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="state" data-search="state govt psc geography rajendra shukla">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="State Government exam prep book" />
+              <div class="book-info">
+                <span class="book-tag">State Govt</span>
+                <h3>State PSC Geography</h3>
+                <p class="meta">By Rajendra Shukla</p>
+                <p>Regional geography, polity, and state-specific current affairs insight.</p>
+                <small>Related exam: State PCS / PSC</small>
+              </div>
+            </article>
+
+            <article class="book-card reveal-up" data-category="upsc" data-search="polity indian constitution upsc deepa menon gs">
+              <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80" alt="Indian polity book" />
+              <div class="book-info">
+                <span class="book-tag">UPSC</span>
+                <h3>Indian Polity & Constitution</h3>
+                <p class="meta">By Deepa Menon</p>
+                <p>Focused chapter notes and practice exercises for one of the most important GS subjects.</p>
+                <small>Related exam: UPSC / State PCS</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand" aria-label="Prepare It & Crack It home">
+            <span class="brand-mark" aria-hidden="true">
+              <span class="crown">👑</span>
+              <span class="book">📖</span>
+            </span>
+            <span class="brand-text">Prepare It &amp; Crack It</span>
+          </a>
+          <p>
+            Curated content and practical study material for serious aspirants.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="books.html">History</a></li>
+            <li><a href="books.html">Polity</a></li>
+            <li><a href="books.html">Reasoning</a></li>
+            <li><a href="books.html">Current Affairs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="about.html">Mission</a></li>
+            <li><a href="resources.html">Study Tips</a></li>
+            <li><a href="categories.html">Exams</a></li>
+            <li><a href="index.html">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>© <span id="year"></span> ExamPath. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

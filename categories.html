@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prepare It & Crack It | Exam Categories</title>
+    <meta
+      name="description"
+      content="Explore government exam categories including Teaching, Civil Services, Banking, SSC, RRB, Railways, Defence, State Government, Police, and other competitive exams."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="categories">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Prepare It & Crack It home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="crown">👑</span>
+            <span class="book">📖</span>
+          </span>
+          <span class="brand-text">Prepare It &amp; Crack It</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="categories.html" class="nav-link active">Categories</a>
+          <a href="books.html" class="nav-link">Books</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="books.html" class="nav-cta">Explore Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell page-inner">
+      <section class="inner-hero section">
+        <div class="container inner-header reveal-up">
+          <span class="eyebrow">Exam categories</span>
+          <h1>Find the right government exam for your goals</h1>
+          <p>
+            Compare major government exam tracks and understand the right study path for each selection process.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container controls-wrap reveal-up">
+          <div class="search-box">
+            <input type="search" id="examSearch" placeholder="Search exams or topics..." aria-label="Search exams" />
+          </div>
+
+          <div class="filter-row" aria-label="Filter exam categories">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="teaching">Teaching</button>
+            <button class="filter-btn" data-filter="civil-services">Civil Services</button>
+            <button class="filter-btn" data-filter="banking">Banking</button>
+            <button class="filter-btn" data-filter="ssc">SSC</button>
+            <button class="filter-btn" data-filter="rrb">RRB</button>
+            <button class="filter-btn" data-filter="railways">Railways</button>
+            <button class="filter-btn" data-filter="defence">Defence</button>
+            <button class="filter-btn" data-filter="state">State Govt</button>
+            <button class="filter-btn" data-filter="police">Police</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="category-grid bulk-grid" id="examCategoryGrid">
+            <article class="exam-card reveal-up" data-name="Teaching" data-category="teaching">
+              <div class="icon-wrap blue">📚</div>
+              <h3>Teaching</h3>
+              <p>CTET, TET, KVS, NVS, and school teaching exam preparation.</p>
+              <ul>
+                <li>Child development</li>
+                <li>General awareness</li>
+                <li>Pedagogy practice</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="Civil Services" data-category="civil-services">
+              <div class="icon-wrap pink">🏛️</div>
+              <h3>Civil Services</h3>
+              <p>UPSC CSE, state civil services, and public administration guidance.</p>
+              <ul>
+                <li>Polity and history</li>
+                <li>GS papers</li>
+                <li>Interview practice</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="Banking" data-category="banking">
+              <div class="icon-wrap purple">💰</div>
+              <h3>Banking</h3>
+              <p>Bank PO, Clerk, RBI, and IBPS exam preparation with speed drills.</p>
+              <ul>
+                <li>Quantitative aptitude</li>
+                <li>Reasoning tests</li>
+                <li>English language</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="SSC" data-category="ssc">
+              <div class="icon-wrap sky">🧾</div>
+              <h3>SSC</h3>
+              <p>SSC CGL, CHSL, MTS, GD, and exam patterns with practice sets.</p>
+              <ul>
+                <li>General intelligence</li>
+                <li>Math and reasoning</li>
+                <li>Tier-based learning</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="RRB" data-category="rrb">
+              <div class="icon-wrap orange">🚄</div>
+              <h3>RRB</h3>
+              <p>Engineering, non-technical, and exam-specific preparation for railway roles.</p>
+              <ul>
+                <li>RRB NTPC</li>
+                <li>Technical sections</li>
+                <li>Mock practice</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="Railways" data-category="railways">
+              <div class="icon-wrap red">🚆</div>
+              <h3>Railways</h3>
+              <p>Group D, ALP, technician, and station staff recruitment preparation.</p>
+              <ul>
+                <li>General awareness</li>
+                <li>Math practice</li>
+                <li>Safety rules</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="Defence" data-category="defence">
+              <div class="icon-wrap blue">🛡️</div>
+              <h3>Defence</h3>
+              <p>NDA, CDS, AFCAT, CAPF, and army/navy/air force oriented prep.</p>
+              <ul>
+                <li>General knowledge</li>
+                <li>English and reasoning</li>
+                <li>Service aptitude</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="State Government" data-category="state">
+              <div class="icon-wrap pink">🧭</div>
+              <h3>State Government</h3>
+              <p>State PSC, assistant roles, clerical jobs, and district recruitment.</p>
+              <ul>
+                <li>State-specific polity</li>
+                <li>History and geography</li>
+                <li>Current affairs</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="Police" data-category="police">
+              <div class="icon-wrap purple">🚨</div>
+              <h3>Police</h3>
+              <p>Constable, sub-inspector, SI, and public security recruitment exams.</p>
+              <ul>
+                <li>Reasoning skills</li>
+                <li>General awareness</li>
+                <li>Physical readiness</li>
+              </ul>
+            </article>
+
+            <article class="exam-card reveal-up" data-name="Other competitive exams" data-category="other">
+              <div class="icon-wrap sky">🎯</div>
+              <h3>Other competitive exams</h3>
+              <p>Insurance, law, tax, PSU, and other career-focused exam preparation tracks.</p>
+              <ul>
+                <li>Topic bridges</li>
+                <li>Sectional practice</li>
+                <li>Speed strategy</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand" aria-label="Prepare It & Crack It home">
+            <span class="brand-mark" aria-hidden="true">
+              <span class="crown">👑</span>
+              <span class="book">📖</span>
+            </span>
+            <span class="brand-text">Prepare It &amp; Crack It</span>
+          </a>
+          <p>
+            Coaching-style guidance with structure, focus, and confidence for exam success.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Exam Tracks</h4>
+          <ul>
+            <li><a href="categories.html">Teaching</a></li>
+            <li><a href="categories.html">Banking</a></li>
+            <li><a href="categories.html">SSC</a></li>
+            <li><a href="categories.html">Defence</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Tips</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="index.html">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>© <span id="year"></span> ExamPath. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
